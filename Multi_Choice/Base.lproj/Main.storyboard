@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="84K-cl-1EO">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--Calc View Controller-->
+        <scene sceneID="Q13-5n-kWN">
+            <objects>
+                <viewController storyboardIdentifier="calc_view" id="Law-yk-r1a" customClass="CalcViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="baX-D9-EVk"/>
+                        <viewControllerLayoutGuide type="bottom" id="BjN-FI-Gvk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hbG-lr-9JS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4GU-VG-1jc">
+                                <rect key="frame" x="7" y="426" width="110" height="50"/>
+                                <state key="normal" title="上一题">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnPrevClick:" destination="Law-yk-r1a" eventType="touchUpInside" id="JzF-uh-6MC"/>
+                                    <action selector="btnPrevClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="V9K-Cl-qSo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOZ-yc-v8g">
+                                <rect key="frame" x="183" y="426" width="110" height="50"/>
+                                <state key="normal" title="下一题">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnNextClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="f5L-Sj-rD4"/>
+                                    <action selector="btnNextClick:" destination="Law-yk-r1a" eventType="touchUpInside" id="pnA-ni-aQT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xwX-lv-ABm">
+                                <rect key="frame" x="105" y="426" width="110" height="50"/>
+                                <connections>
+                                    <action selector="btnShowAnswerClick:" destination="Law-yk-r1a" eventType="touchUpInside" id="HWv-IZ-THR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="m_btn_next" destination="fOZ-yc-v8g" id="mFq-FI-xDO"/>
+                        <outlet property="m_btn_prev" destination="4GU-VG-1jc" id="Tk7-mT-Dkf"/>
+                        <outlet property="m_btn_showAnswer" destination="xwX-lv-ABm" id="KRt-St-CnN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rqF-p7-F5Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-230" y="431"/>
+        </scene>
+        <!--Mult Choice Detail View Controller-->
+        <scene sceneID="GP5-o8-Th7">
+            <objects>
+                <viewController storyboardIdentifier="multi_choice_detail" id="Mno-Zu-1fk" customClass="MultChoiceDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IwJ-tg-sFZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="WXz-F7-fHD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="s4g-e4-79t">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ui-JB-vo2">
+                                <rect key="frame" x="40" y="497" width="110" height="50"/>
+                                <state key="normal" title="上一个">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onPrevClick:" destination="Mno-Zu-1fk" eventType="touchUpInside" id="urf-Vw-A4z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0L-dt-RAY">
+                                <rect key="frame" x="187" y="489" width="110" height="50"/>
+                                <state key="normal" title="下一个">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onNextClick:" destination="Mno-Zu-1fk" eventType="touchUpInside" id="omt-av-pK0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="m_btn_next" destination="h0L-dt-RAY" id="wmb-jt-mwZ"/>
+                        <outlet property="m_btn_prev" destination="2ui-JB-vo2" id="CVD-n2-aIW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Iv-PL-vwy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-242" y="1076"/>
+        </scene>
+        <!--Calc Detail View Controller-->
+        <scene sceneID="0Tz-59-vce">
+            <objects>
+                <viewController storyboardIdentifier="calc_detail_view" id="tPY-Op-bSY" customClass="CalcDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8T5-w8-5O7"/>
+                        <viewControllerLayoutGuide type="bottom" id="RKz-wn-2Ea"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FLt-bK-79H">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9G0-yH-idY">
+                                <rect key="frame" x="167" y="399" width="110" height="50"/>
+                                <state key="normal" title="下一个">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onNextClick:" destination="tPY-Op-bSY" eventType="touchUpInside" id="dwS-VF-9dJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Pl-el-RFk">
+                                <rect key="frame" x="16" y="399" width="110" height="50"/>
+                                <state key="normal" title="上一个">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onPrevClick:" destination="tPY-Op-bSY" eventType="touchUpInside" id="5Wu-D6-WTS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="m_btn_next" destination="9G0-yH-idY" id="vJG-8B-Q40"/>
+                        <outlet property="m_btn_prev" destination="2Pl-el-RFk" id="TKr-Q7-yjn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3hh-Zv-nOS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-242" y="1716"/>
+        </scene>
+        <!--Multi Choice View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController storyboardIdentifier="question_view" id="vXZ-lx-hvc" customClass="MultiChoiceViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0L-GZ-obO">
+                                <rect key="frame" x="210" y="430" width="110" height="50"/>
+                                <state key="normal" title="下一题">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnNextClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0iH-1r-PtU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FEW-lr-WFd">
+                                <rect key="frame" x="0.0" y="430" width="110" height="50"/>
+                                <state key="normal" title="上一题">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnPrevClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DSb-Ka-osO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="m_btn_next" destination="e0L-GZ-obO" id="2u5-eH-71K"/>
+                        <outlet property="m_btn_prev" destination="FEW-lr-WFd" id="qn9-xA-Xv4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="v4i-wW-gIX">
+            <objects>
+                <viewController storyboardIdentifier="rootview" id="84K-cl-1EO" customClass="RootViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ldb-DO-LKy"/>
+                        <viewControllerLayoutGuide type="bottom" id="WGh-Hr-4qk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QbZ-a9-3Y5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="AHK-SA-GGu">
+                                <rect key="frame" x="0.0" y="20" width="320" height="492"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="m_tableview_list" destination="AHK-SA-GGu" id="CBc-K2-eMS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="27r-sY-ric" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="526" y="8"/>
+        </scene>
+        <!--About Dlg View Controller-->
+        <scene sceneID="Ca4-7C-NG6">
+            <objects>
+                <viewController storyboardIdentifier="about_view" id="u9E-A5-9JK" customClass="AboutDlgViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vec-me-FRx"/>
+                        <viewControllerLayoutGuide type="bottom" id="aO7-TI-sfE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ucZ-A2-GTY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="GgY-Fe-iKp">
+                                <rect key="frame" x="103" y="87" width="120" height="120"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="v1.1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTd-7f-M6n">
+                                <rect key="frame" x="90" y="224" width="156" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Copyright @2014 lujianfei All Rights Reserved" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmT-r0-CnH">
+                                <rect key="frame" x="20" y="497" width="349" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="M9P-nk-CPx">
+                                <rect key="frame" x="54" y="261" width="228" height="144"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="m_img_logo" destination="GgY-Fe-iKp" id="gMf-zq-2Vw"/>
+                        <outlet property="m_lbl_copyright" destination="nmT-r0-CnH" id="XgA-SP-5or"/>
+                        <outlet property="m_lbl_version" destination="eTd-7f-M6n" id="XKm-ob-6zq"/>
+                        <outlet property="m_tableview_setting" destination="M9P-nk-CPx" id="Bzm-0C-KUD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kel-CK-pPZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-170" y="3226"/>
+        </scene>
+        <!--Feedback View Controller-->
+        <scene sceneID="Ntw-13-721">
+            <objects>
+                <viewController storyboardIdentifier="feedback_view" id="fg7-kT-OJb" customClass="FeedbackViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hJO-AK-maP"/>
+                        <viewControllerLayoutGuide type="bottom" id="DKa-ba-WNB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WN6-P8-Mu0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RPD-Qr-u0Z">
+                                <rect key="frame" x="53" y="145" width="240" height="128"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dF7-LL-32f">
+                                <rect key="frame" x="218" y="208" width="42" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="m_lbl_remain" destination="dF7-LL-32f" id="RC6-Tm-70R"/>
+                        <outlet property="m_textview_feedback" destination="RPD-Qr-u0Z" id="eY3-eJ-4HQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pge-0n-71K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="279" y="3218"/>
+        </scene>
+        <!--Search View Controller-->
+        <scene sceneID="ovP-WM-QHz">
+            <objects>
+                <viewController storyboardIdentifier="search_view" id="gnn-24-ihh" customClass="SearchViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dl8-L9-MKM"/>
+                        <viewControllerLayoutGuide type="bottom" id="p2F-fr-KWZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pXJ-qj-t8f">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Fo-Y7-xfP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="627" y="3378"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon.png" width="57" height="57"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
