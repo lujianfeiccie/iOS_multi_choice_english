@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-<question title="36. You can arrive in Guangzhou on time for the fashion show__________ you don’t mind taking the night train." answer="provided" note="引导句子时有“假定”之意。provided（常 ~ that；表条件）在…条件下；&#x0A;倘若，假若，只要 (only if)；&#x0A;unless 除非，如果不 (= if…not)；&#x0A;though虽然；尽管；&#x0A;until在…以前；直到…时。&#x0A;题干意思：如果你不介意乘坐这趟夜间火车的话，你就能够准时到达广州赶上时装秀。">
+<question title="36. You can arrive in Guangzhou on time for the fashion show__________ you don’t mind taking the night train." answer="unless" note="引导句子时有“假定”之意。provided（常 ~ that；表条件）在…条件下；&#x0A;倘若，假若，只要 (only if)；&#x0A;unless 除非，如果不 (= if…not)；&#x0A;though虽然；尽管；&#x0A;until在…以前；直到…时。&#x0A;题干意思：如果你不介意乘坐这趟夜间火车的话，你就能够准时到达广州赶上时装秀。">
 <choice>provided</choice>
 <choice>unless</choice>
 <choice>though</choice>
 <choice>until</choice>
 </question>
-<question title="37. The students are still taking about the strange people they__________ on their trip." answer="met" note="本题考查时态。旅途中的“遇见”是过去发生的动作，因此排除A（一般现在时）和C（被动语态）；&#x0A;B选项（过去完成时）一般与过去式组合。因此正确答案为D&#x0A;题干意思：学生们正在谈论他们在旅途中遇见的陌生人。">
+<question title="37. The students are still taking about the strange people they__________ on their trip." answer="met" note="本题考查时态。旅途中的“遇见”是过去发生的动作，因此排除meet（一般现在时）和were met（被动语态）；&#x0A;选项had met（过去完成时）一般与过去式组合。因此正确答案为met&#x0A;题干意思：学生们正在谈论他们在旅途中遇见的陌生人。">
 <choice>meet</choice>
 <choice>had met</choice>
 <choice>were met</choice>
@@ -24,13 +24,13 @@
 <choice>had followed</choice>
 <choice>was once followed</choice>
 </question>
-<question title="40. __________has finished the task ahead of time will be rewarded, though we don’t know who it will be." answer="Whoever" note="本题考查的是名词性从句引导词。“will be rewarded”是真正的谓语动词，前面应当是名词性定语从句做主语。&#x0A;A选项“Those who”与“who it will be（单数）”相矛盾；&#x0A;B选项应当是“Anyone who”；&#x0A;D选项与题意不符。&#x0A;题干意思：虽然我们不知道这个人是谁，但是无论谁提前完成此项工作都将获得奖励。">
+<question title="40. __________has finished the task ahead of time will be rewarded, though we don’t know who it will be." answer="Whoever" note="本题考查的是名词性从句引导词。“will be rewarded”是真正的谓语动词，前面应当是名词性定语从句做主语。&#x0A;选项“Those who”与“who it will be（单数）”相矛盾；&#x0A;选项Anyone应当是“Anyone who”；&#x0A;选项Who与题意不符。&#x0A;题干意思：虽然我们不知道这个人是谁，但是无论谁提前完成此项工作都将获得奖励。">
 <choice>Those who</choice>
 <choice>Anyone</choice>
 <choice>Whoever</choice>
 <choice>Who</choice>
 </question>
-<question title="41. At last I decided to pay a visit to my new general manager as soon as I__________ ." answer="finished what I was doing" note="根据题意，as soon as所引导的时间状语从句中，谓语动词finish所发生的时间为“过去将来”。这里的“过去将来”要用一般过去时来表示，不用过去将来时，因而选项D是正确答案。&#x0A;as soon as所引起的时间状语从句中，用一般过去时表示“过去将来”时间的用法，类似于用一般现在时来表示“将来”时间的用法。&#x0A;题干意思：最后我决定一做完手头的工作就去拜访我的新任总经理。">
+<question title="41. At last I decided to pay a visit to my new general manager as soon as I__________ ." answer="finished what I was doing" note="根据题意，as soon as所引导的时间状语从句中，谓语动词finish所发生的时间为“过去将来”。&#x0A;这里的“过去将来”要用一般过去时来表示，不用过去将来时，因而选项finished what I was doing是正确答案。&#x0A;as soon as所引起的时间状语从句中，用一般过去时表示“过去将来”时间的用法，类似于用一般现在时来表示“将来”时间的用法。&#x0A;题干意思：最后我决定一做完手头的工作就去拜访我的新任总经理。">
 <choice>finish what I did</choice>
 <choice>finished what I did</choice>
 <choice>would finish what I was doing</choice>
@@ -120,7 +120,7 @@
 <choice>which</choice>
 <choice>as</choice>
 </question>
-<question title="56. The traditional approach to dealing with complex problems is to__________ into smaller, more easily managed ones." answer="take them down" note="break down分解；&#x0A;take down记下，拿下，拆卸，病倒；&#x0A;make up弥补，组成，化妆，整理，捏造；&#x0A;bring up提出，教育，养育，呕出，（船等）停下。&#x0A;题干意思：对于复杂问题的解决办法一般就是把问题分成多个小一些，简单一些的问题来处理。">
+<question title="56. The traditional approach to dealing with complex problems is to__________ into smaller, more easily managed ones." answer="break them down" note="break down分解；&#x0A;take down记下，拿下，拆卸，病倒；&#x0A;make up弥补，组成，化妆，整理，捏造；&#x0A;bring up提出，教育，养育，呕出，（船等）停下。&#x0A;题干意思：对于复杂问题的解决办法一般就是把问题分成多个小一些，简单一些的问题来处理。">
 <choice>break them down</choice>
 <choice>take them down</choice>
 <choice>make them up</choice>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0432CE631A24DAEE00D0492C /* simulation_1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0432CE611A24DAEE00D0492C /* simulation_1.xml */; };
+		0432CE641A24DAEE00D0492C /* simulation_0.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0432CE621A24DAEE00D0492C /* simulation_0.xml */; };
 		1801B24319F0ADD400EDEC03 /* MultiChoiceDlg.m in Sources */ = {isa = PBXBuildFile; fileRef = 1801B24219F0ADD400EDEC03 /* MultiChoiceDlg.m */; };
 		1801B24619F0BB3500EDEC03 /* CalcChoiceDLg.m in Sources */ = {isa = PBXBuildFile; fileRef = 1801B24519F0BB3500EDEC03 /* CalcChoiceDLg.m */; };
 		180B6BF81A1E34150025A171 /* hunan_2010_11.xml in Resources */ = {isa = PBXBuildFile; fileRef = 180B6BF71A1E34150025A171 /* hunan_2010_11.xml */; };
@@ -77,6 +79,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0432CE611A24DAEE00D0492C /* simulation_1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = simulation_1.xml; sourceTree = "<group>"; };
+		0432CE621A24DAEE00D0492C /* simulation_0.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = simulation_0.xml; sourceTree = "<group>"; };
 		1801B24119F0ADD400EDEC03 /* MultiChoiceDlg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiChoiceDlg.h; sourceTree = "<group>"; };
 		1801B24219F0ADD400EDEC03 /* MultiChoiceDlg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiChoiceDlg.m; sourceTree = "<group>"; };
 		1801B24419F0BB3500EDEC03 /* CalcChoiceDLg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalcChoiceDLg.h; sourceTree = "<group>"; };
@@ -219,6 +223,8 @@
 		188D2DB919DBAF25009D45E2 /* Questions */ = {
 			isa = PBXGroup;
 			children = (
+				0432CE611A24DAEE00D0492C /* simulation_1.xml */,
+				0432CE621A24DAEE00D0492C /* simulation_0.xml */,
 				180B6BF71A1E34150025A171 /* hunan_2010_11.xml */,
 			);
 			name = Questions;
@@ -481,7 +487,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				18B3A7C019BDB96800A4B068 /* Icon.png in Resources */,
+				0432CE631A24DAEE00D0492C /* simulation_1.xml in Resources */,
 				18B3A7C119BDB96800A4B068 /* Icon@2x.png in Resources */,
+				0432CE641A24DAEE00D0492C /* simulation_0.xml in Resources */,
 				180E3B8919E292520028B7A6 /* SVProgressHUD.bundle in Resources */,
 				18E7B03819A7770300092469 /* Images.xcassets in Resources */,
 				18B3A7C319BDBA0C00A4B068 /* Default@2x.png in Resources */,
@@ -601,7 +609,6 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Shenzhen OPTechWell Co.,Ltd. (3U5V8P94QW)";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "e4b87755-283b-46cf-b433-922e3b1d0935";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 			};
@@ -612,7 +619,6 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Shenzhen OPTechWell Co.,Ltd. (3U5V8P94QW)";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				PROVISIONING_PROFILE = "e4b87755-283b-46cf-b433-922e3b1d0935";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 			};
@@ -623,15 +629,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: jianfei lu (L7FW62Y4Q4)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Multi_Choice/Multi_Choice-Prefix.pch";
 				INFOPLIST_FILE = "Multi_Choice/Multi_Choice-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "e4b87755-283b-46cf-b433-922e3b1d0935";
+				PROVISIONING_PROFILE = "e3f8255f-9245-4896-bb87-26a3cb39c7a2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -641,15 +647,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: jianfei lu (L7FW62Y4Q4)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Multi_Choice/Multi_Choice-Prefix.pch";
 				INFOPLIST_FILE = "Multi_Choice/Multi_Choice-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "e4b87755-283b-46cf-b433-922e3b1d0935";
+				PROVISIONING_PROFILE = "e3f8255f-9245-4896-bb87-26a3cb39c7a2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

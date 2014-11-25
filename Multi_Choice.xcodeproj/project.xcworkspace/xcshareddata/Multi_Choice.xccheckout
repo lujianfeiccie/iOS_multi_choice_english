@@ -10,31 +10,31 @@
 	<string>Multi_Choice</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>96C4B22F8CC59A1FB079CF30039A9DE2B0AB2469</key>
-		<string>https://github.com/lujianfeiccie/iOS_multi_choice.git</string>
+		<key>3D31917B463666788ABC0696590940196AC64D8A</key>
+		<string>https://github.com/lujianfeiccie/iOS_multi_choice_english.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Multi_Choice.xcodeproj/project.xcworkspace</string>
+	<string>Multi_Choice.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>96C4B22F8CC59A1FB079CF30039A9DE2B0AB2469</key>
+		<key>3D31917B463666788ABC0696590940196AC64D8A</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/lujianfeiccie/iOS_multi_choice.git</string>
+	<string>https://github.com/lujianfeiccie/iOS_multi_choice_english.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>96C4B22F8CC59A1FB079CF30039A9DE2B0AB2469</string>
+	<string>3D31917B463666788ABC0696590940196AC64D8A</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>96C4B22F8CC59A1FB079CF30039A9DE2B0AB2469</string>
+			<string>3D31917B463666788ABC0696590940196AC64D8A</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Multi_Choice</string>
+			<string>iOS_multi_choice_english</string>
 		</dict>
 	</array>
 </dict>

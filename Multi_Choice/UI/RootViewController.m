@@ -52,13 +52,23 @@
     
     
     m_datalist = [[NSMutableArray alloc]init];
-    ModelData *model = [[ModelData alloc]init];
-    model.m_text = @"2010年11月";
+    ModelData *model;
+    
+    model = [[ModelData alloc]init];
+    model.m_text = @"湖南2010年11月";
     model.m_value = @"hunan_2010_11";
     [m_datalist addObject:model];
     
+    model = [[ModelData alloc]init];
+    model.m_text = @"模拟词汇和语法练习1";
+    model.m_value = @"simulation0";
+    [m_datalist addObject:model];
     
-
+    model = [[ModelData alloc]init];
+    model.m_text = @"模拟词汇和语法练习2";
+    model.m_value = @"simulation_1";
+    [m_datalist addObject:model];
+    
     [m_tableview_list setFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width,[UIScreen mainScreen].bounds.size.height-self.navigationController.navigationBar.frame.size.height)];
 
   
@@ -81,7 +91,7 @@
     NSLogExt(@"m_isAboutDlg=%i",m_versionCheckTool.m_isAboutDlg);
 
     //Check the version
-    [m_versionCheckTool request];
+   // [m_versionCheckTool request];
 //    m_tableview_list.backgroundColor = [UIColor redColor];
 }
 
@@ -201,13 +211,10 @@
     results_multi_choice.m_type = TYPE_Multi_Choice;
     
     NSArray* mutli_question_filename = [NSArray arrayWithObjects:
-                         @"2014_04",
-                         @"2013_10",
-                         @"2013_01",
-                         @"2012_10",
-                         @"2011_10",
-                         @"2010_10",
-                         @"2009_10",nil];
+                         @"hunan_2010_11",
+                         @"simulation_0",
+                         @"simulation_1",
+                         nil];
 
 
     
@@ -229,96 +236,9 @@
     }
     //////////////////End for Multi choice ///////////////
     
-    ///////////////////For short answer////////////////
-    XMLCalcHelper* xmlCalcHelper = [[XMLCalcHelper alloc]init];
     
-    NSMutableArrayExt* results_short_answer = [[NSMutableArrayExt alloc]init];
-    results_short_answer.m_type = TYPE_Short_Answer;
-    
-    NSArray* mutli_short_answer_filename = [NSArray arrayWithObjects:
-                                        @"2014_04_short_answer",
-                                        @"2013_10_short_answer",
-                                        @"2013_01_short_answer",
-                                        @"2012_10_short_answer",
-                                        @"2011_10_short_answer",
-                                        @"2010_10_short_answer",
-                                        @"2009_10_short_answer",nil];
-    
-    
-    for (NSString* filename in mutli_short_answer_filename)
-    {
-        [xmlCalcHelper load:filename];
-        NSMutableArray *m_questions = [[xmlCalcHelper rootElement] m_subElements];
-        
-        NSUInteger count = [m_questions count];
-        for (NSUInteger i=0; i<count; i++) //num of questions
-        {
-            XMLCalcElement* obj =[m_questions objectAtIndex:i];
-            NSUInteger count_items = [obj.m_subElements count];
-            
-            for (NSUInteger j=0; j<count_items; j++)  //num of items in each question
-            {
-                XMLCalcElement* item = [obj.m_subElements objectAtIndex:j];
-                if ([[item m_tag] isEqualToString:@"question"] &&
-                    [Util containString:item.m_value :keywords])
-                {
-                    [results_short_answer addObject:[m_questions objectAtIndex:i]];
-//                    NSLogExt(@"tag=%@,value=%@",item.m_tag,item.m_value);
-                }
-
-            }
-        }
-        
-    }
-    //////////////////End for short answer ///////////////
-
-    
-    ///////////////////For calc////////////////
-    
-    NSMutableArrayExt* results_calc = [[NSMutableArrayExt alloc]init];
-    results_calc.m_type = TYPE_Calc;
-    
-    NSArray* mutli_calc_filename = [NSArray arrayWithObjects:
-                                            @"2014_04_calc",
-                                            @"2013_10_calc",
-                                            @"2013_01_calc",
-                                            @"2012_10_calc",
-                                            @"2011_10_calc",
-                                            @"2010_10_calc",
-                                            @"2009_10_calc",
-                                            nil];
-    
-    
-    for (NSString* filename in mutli_calc_filename)
-    {
-        [xmlCalcHelper load:filename];
-        NSMutableArray *m_questions = [[xmlCalcHelper rootElement] m_subElements];
-        
-        NSUInteger count = [m_questions count];
-        for (NSUInteger i=0; i<count; i++) //num of questions
-        {
-            XMLCalcElement* obj =[m_questions objectAtIndex:i];
-            NSUInteger count_items = [obj.m_subElements count];
-            
-            for (NSUInteger j=0; j<count_items; j++)  //num of items in each question
-            {
-                XMLCalcElement* item = [obj.m_subElements objectAtIndex:j];
-                if ([[item m_tag] isEqualToString:@"question"] &&
-                    [Util containString:item.m_value :keywords])
-                {
-                    [results_calc addObject:[m_questions objectAtIndex:i]];
-                     NSLogExt(@"tag=%@,value=%@",item.m_tag,item.m_value);
-                }
-                
-            }
-        }
-        
-    }
-    //////////////////End for calc ///////////////
     [SVProgressHUD dismiss];
-    if ([results_multi_choice count] == 0
-        && [results_short_answer count] == 0
-        && [results_calc count] == 0)
+    if ([results_multi_choice count] == 0)
     {
         [SVProgressHUD showErrorWithStatus:@"没有找到相关内容"];
         return;
@@ -328,14 +248,7 @@
     {
          [results_total addObject:results_multi_choice];
     }
-    if ([results_short_answer count]!=0)
-    {
-         [results_total addObject:results_short_answer];
-    }
-    if ([results_calc count]!=0)
-    {
-        [results_total addObject:results_calc];
-    }
+    
     SearchViewController* search_view =[[self storyboard] instantiateViewControllerWithIdentifier:@"search_view"];
     search_view.m_array_list = results_total;
     [[app navController] pushViewController:search_view animated:YES];
