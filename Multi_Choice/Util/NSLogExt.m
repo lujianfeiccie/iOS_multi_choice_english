@@ -7,7 +7,7 @@
 //
 #include <stdio.h>
 #include "NSLogExt.h"
-//#define LOG_DEBUG
+#define LOG_DEBUG
 void ExtendNSLog(const char *file, int lineNumber, const char *functionName, NSString *format, ...)
 {
     #if defined(LOG_DEBUG)

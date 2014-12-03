@@ -10,6 +10,12 @@
 #import "AppDelegate.h"
 #import "UILabelExt.h"
 #import "XMLHelper.h"
+
+@protocol MultiChoiceDlgDelegate <NSObject>
+@optional
+-(void) onResultReceive:(NSUInteger) total correct:(NSUInteger) numOfCorrect : (id)sender;
+@end
+
 @interface MultiChoiceDlg : NSObject<UILabelExtDelegate>
 {
     UIScrollView *m_scrollview;
@@ -21,18 +27,21 @@
     UILabelExt *m_lbl_note;
     XMLHelper* m_xmlHelper;
     NSInteger m_count;
-    NSMutableArray* m_questions;
+    
     NSInteger m_currentIndex;
     NSString* m_str_answer;
     
     UIView *m_view;
     CGRect m_rect;
     NSString* m_filename;
+    BOOL m_bFinished;
 }
 @property(nonatomic,strong) NSString* m_title;
 @property(nonatomic) BOOL m_bShowSearchDetail;
 @property(nonatomic,strong) NSMutableArray* m_questions;
 @property(nonatomic) NSInteger m_currentIndex;
+@property(nonatomic,strong) id<MultiChoiceDlgDelegate> delegateExt;
+@property(nonatomic) NSUInteger m_numOfCorrect;
 -(id) initWithView : (UIView*) view DisplayRect : (CGRect) rect DataFile : (NSString*) filename;
 -(void) load;
 -(void) updateUI;

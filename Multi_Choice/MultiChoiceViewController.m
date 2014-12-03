@@ -64,7 +64,7 @@
                                                             self.view.frame.size.width,
                                                             self.view.frame.size.height-m_btn_next.frame.size.height-self.navigationController.navigationBar.frame.size.height-20)
                                         DataFile:m_filename];
-    
+    m_dlg.delegateExt = self;
     [m_dlg load];
     
 }
@@ -76,6 +76,8 @@
     }
     [PlatformUtil ResizeUIToBottomRight:m_btn_next parentView:self.view];
     [PlatformUtil ResizeUIToBottomLeft:m_btn_prev parentView:self.view];
+    [PlatformUtil ResizeUIToBottomCenter:m_btn_show_result parentView:self.view];
+    [m_btn_show_result setHidden:YES];
     [m_dlg updateUI];
 }
 - (void)didReceiveMemoryWarning
@@ -96,13 +98,28 @@
     [m_dlg prev];
 }
 
+- (IBAction)btnShowResultClick:(id)sender
+{
+    DialogUtil *m_dialog = [[DialogUtil alloc] init];
+    
+    NSUInteger total = [m_dlg.m_questions count];
+    NSUInteger numOfCorrect =m_dlg.m_numOfCorrect;
+    NSString* tmp = [NSString stringWithFormat:@"总数:%lu\n正确数:%lu\n正确率:%.0f%%",(unsigned long)total,(unsigned long)numOfCorrect,(float)numOfCorrect/(float)total*100];
+    [m_dialog showDialogTitle:@"您的成绩" message:tmp confirm:@"知道了"];
+//    [m_dialog release];
+}
 
+-(void) onResultReceive:(NSUInteger) total correct:(NSUInteger) numOfCorrect : (id)sender
+{
+    [m_btn_show_result setHidden:NO];
+}
 - (void)dealloc {
     NSLogExt(@"dealloc");
     [m_title release];
     [m_btn_prev release];
     [m_btn_next release];
     [m_dlg release];
+    [m_btn_show_result release];
     [super dealloc];
 }
 @end

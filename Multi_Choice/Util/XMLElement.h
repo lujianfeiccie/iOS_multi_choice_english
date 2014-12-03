@@ -17,5 +17,8 @@
 @property (nonatomic,strong) NSMutableArray *m_subElements;
 @property (nonatomic,strong) XMLElement *m_parent;
 @property (nonatomic) NSInteger m_selected;
+@property (nonatomic) BOOL m_bCorrect;
 -(void) setSelectExt:(NSInteger) selected;
+-(void) setCorrect: (BOOL) isCorrected;
+-(BOOL) isCorrect;
 @end

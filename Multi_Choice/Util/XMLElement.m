@@ -17,11 +17,12 @@
 @synthesize m_parent;
 @synthesize m_subElements;
 @synthesize m_selected;
-
+@synthesize m_bCorrect;
 -(id)init{
    self = [super init];
     if (self) {
         m_selected = -1;
+        m_bCorrect = NO;
     }
     return self;
 }
@@ -33,5 +34,13 @@
 }
 -(void) setSelectExt:(NSInteger) selected{
     m_selected = selected;
+}
+-(void) setCorrect: (BOOL) isCorrected
+{
+    m_bCorrect = isCorrected;
+}
+-(BOOL) isCorrect
+{
+    return m_bCorrect;
 }
 @end
