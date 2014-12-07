@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "AbstractViewController.h"
+#import "AbstractDetailViewController.h"
+#import "AbstractSearchViewController.h"
+#import "ViewControllerFactory.h"
 #import "ButtonUtil.h"
 #import "PlatformUtil.h"
 #import "NSLogExt.h"

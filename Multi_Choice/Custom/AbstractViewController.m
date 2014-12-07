@@ -13,7 +13,8 @@
 @end
 
 @implementation AbstractViewController
-
+@synthesize m_filename;
+@synthesize m_title;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];

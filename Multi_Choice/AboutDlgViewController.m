@@ -124,7 +124,7 @@
         case 0:
         {
             //Go to feedback
-            UIViewController *next = [[self storyboard] instantiateViewControllerWithIdentifier:@"feedback_view"];
+            AbstractViewController *next = [ViewControllerFactory getFeedbackDlg:self];
             [[app navController] pushViewController:next animated:YES];
         }
             break;

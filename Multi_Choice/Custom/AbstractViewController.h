@@ -13,5 +13,6 @@
 //Test APP ID 284417350
 //MY   APP ID 926687232
 @interface AbstractViewController : UIViewController
-
+@property(nonatomic,strong) NSString* m_filename;
+@property(nonatomic,strong) NSString* m_title;
 @end

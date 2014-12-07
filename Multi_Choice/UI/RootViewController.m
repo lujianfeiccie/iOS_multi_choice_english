@@ -11,6 +11,7 @@
 #import "ModelData.h"
 #import "SearchViewController.h"
 #import "NSMutableArrayExt.h"
+#import "ViewControllerFactory.h"
 @interface RootViewController ()
 
 @end
@@ -31,7 +32,7 @@
 
 -(void) toolBarRight
 {
-    UIViewController *next = [[self storyboard] instantiateViewControllerWithIdentifier:@"about_view"];
+    AbstractViewController *next = [ViewControllerFactory getAboutDlg:self];
    [app.navController pushViewController:next animated:YES];
   
 }
@@ -57,16 +58,31 @@
     model = [[ModelData alloc]init];
     model.m_text = @"湖南2010年11月";
     model.m_value = @"hunan_2010_11";
+    model.m_type = TYPE_MULTI_CHOICE;
     [m_datalist addObject:model];
     
     model = [[ModelData alloc]init];
     model.m_text = @"模拟词汇和语法练习1";
-    model.m_value = @"simulation0";
+    model.m_value = @"simulation_0";
+    model.m_type = TYPE_MULTI_CHOICE;
     [m_datalist addObject:model];
     
     model = [[ModelData alloc]init];
     model.m_text = @"模拟词汇和语法练习2";
     model.m_value = @"simulation_1";
+    model.m_type = TYPE_MULTI_CHOICE;
+    [m_datalist addObject:model];
+    
+    model = [[ModelData alloc]init];
+    model.m_text = @"写作必背句型1";
+    model.m_value = @"Writing_1";
+    model.m_type = TYPE_SHORT_ANSWER;
+    [m_datalist addObject:model];
+    
+    model = [[ModelData alloc]init];
+    model.m_text = @"写作必背句型2";
+    model.m_value = @"Writing_2";
+    model.m_type = TYPE_SHORT_ANSWER;
     [m_datalist addObject:model];
     
     [m_tableview_list setFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width,[UIScreen mainScreen].bounds.size.height-self.navigationController.navigationBar.frame.size.height)];
@@ -142,9 +158,27 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSUInteger row = [indexPath row];
     
-   MultiChoiceViewController *next = [[self storyboard] instantiateViewControllerWithIdentifier:@"question_view"];
-   next.m_filename = ((ModelData*)[m_datalist objectAtIndex:row]).m_value;
-   next.m_title = ((ModelData*)[m_datalist objectAtIndex:row]).m_text;
+    AbstractViewController *next = nil;
+    
+    ModelData *model = [m_datalist objectAtIndex:row];
+    switch (model.m_type) {
+        case TYPE_MULTI_CHOICE:
+        {
+            next = [ViewControllerFactory getMultiChoice:self];
+        }
+            break;
+        case TYPE_SHORT_ANSWER:
+        {
+            next = [ViewControllerFactory getShortAnswerOrCalc:self];
+        }
+            break;
+        default:
+            break;
+    }
+   
+   next.m_filename = model.m_value;
+   next.m_title = model.m_text;
+    
    [[app navController] pushViewController:next animated:YES];
 }
 
@@ -204,7 +238,7 @@
 {
     
      XMLHelper* xmlHelper = [[XMLHelper alloc]init];;
-    
+    XMLCalcHelper* xmlCalcHelper = [[XMLCalcHelper alloc]init];
     
     ///////////////////For multi choice////////////////
     NSMutableArrayExt* results_multi_choice = [[NSMutableArrayExt alloc]init];
@@ -236,9 +270,47 @@
     }
     //////////////////End for Multi choice ///////////////
     
+    ///////////////////For Short answer////////////////
+    NSMutableArrayExt* results_short_answer = [[NSMutableArrayExt alloc]init];
+    results_short_answer.m_type = TYPE_Short_Answer;
+    
+    NSArray* shortanswer_filename = [NSArray arrayWithObjects:
+                                        @"Writing_1",
+                                        @"Writing_2",
+                                        nil];
+    
+    
+    
+    for (NSString* filename in shortanswer_filename)
+    {
+        [xmlCalcHelper load:filename];
+        NSMutableArray *m_questions = [[xmlCalcHelper rootElement] m_subElements];
+        
+        NSUInteger count = [m_questions count];
+        for (NSUInteger i=0; i<count; i++) //num of questions
+        {
+            XMLCalcElement* obj =[m_questions objectAtIndex:i];
+            NSUInteger count_items = [obj.m_subElements count];
+            
+            for (NSUInteger j=0; j<count_items; j++)  //num of items in each question
+            {
+                XMLCalcElement* item = [obj.m_subElements objectAtIndex:j];
+                if ([[item m_tag] isEqualToString:@"question"] &&
+                    [Util containString:item.m_value :keywords])
+                {
+                    [results_short_answer addObject:[m_questions objectAtIndex:i]];
+                    NSLogExt(@"tag=%@,value=%@",item.m_tag,item.m_value);
+                }
+                
+            }
+        }
+        
+    }
+    //////////////////End for Short answer ///////////////
     
     [SVProgressHUD dismiss];
-    if ([results_multi_choice count] == 0)
+    if ([results_multi_choice count] == 0 &&
+        [results_short_answer count] == 0 )
     {
         [SVProgressHUD showErrorWithStatus:@"没有找到相关内容"];
         return;
@@ -248,8 +320,12 @@
     {
          [results_total addObject:results_multi_choice];
     }
+    if([results_short_answer count]!=0)
+    {
+        [results_total addObject:results_short_answer];
+    }
     
-    SearchViewController* search_view =[[self storyboard] instantiateViewControllerWithIdentifier:@"search_view"];
+    AbstractSearchViewController* search_view = [ViewControllerFactory getSearchView:self];
     search_view.m_array_list = results_total;
     [[app navController] pushViewController:search_view animated:YES];
 }

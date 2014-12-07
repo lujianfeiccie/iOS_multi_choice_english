@@ -13,8 +13,6 @@
 @end
 
 @implementation CalcViewController
-@synthesize m_title;
-@synthesize m_filename;
 @synthesize m_bCalcView;
 -(void) toolBarRight
 {
@@ -32,16 +30,16 @@
 
     NSString *tmp_filename;
     NSString *tmp_title;
-    if ([m_filename isEqualToString:@"all"]) {
+    if ([super.m_filename isEqualToString:@"all"]) {
         
-        tmp_filename = m_filename;
+        tmp_filename = super.m_filename;
         tmp_filename = [NSString stringWithFormat:@"%@_calc",tmp_filename];
         tmp_title = @"综合真题计算题";
     }
     else
     {
-        tmp_filename = m_filename;
-        tmp_title = [NSString stringWithFormat:@"%@计算题",[m_title substringToIndex:10]];
+        tmp_filename = super.m_filename;
+        tmp_title = [NSString stringWithFormat:@"%@计算题",[super.m_title substringToIndex:10]];
         tmp_filename = [tmp_filename substringToIndex:7];
         tmp_filename = [NSString stringWithFormat:@"%@_calc",tmp_filename];
         
@@ -65,7 +63,7 @@
     app = [[UIApplication sharedApplication]delegate];
 
     
-    self.navigationItem.title = m_title;
+    self.navigationItem.title = super.m_title;
     
     if(!m_bCalcView)
     {
@@ -74,7 +72,7 @@
     m_dlg = [[ CalcChoiceDLg alloc] initWithView:self.view DisplayRect:CGRectMake(0, 0,
                                                                                  self.view.frame.size.width,
                                                                                  self.view.frame.size.height-m_btn_next.frame.size.height-self.navigationController.navigationBar.frame.size.height-20)
-                                        DataFile:m_filename];
+                                        DataFile:super.m_filename];
     [m_dlg load];
     [m_btn_showAnswer setTitle:@"显示/隐藏答案" forState:UIControlStateNormal];
 }

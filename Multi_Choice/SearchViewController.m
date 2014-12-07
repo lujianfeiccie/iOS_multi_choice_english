@@ -11,12 +11,12 @@
 #import "MultChoiceDetailViewController.h"
 #import "CalcDetailViewController.h"
 #import "NSMutableArrayExt.h"
+#import "ViewControllerFactory.h"
 @interface SearchViewController ()
 
 @end
 
 @implementation SearchViewController
-@synthesize m_array_list;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -33,10 +33,10 @@
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return [m_array_list count];
+    return [super.m_array_list count];
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSMutableArray *questions = [m_array_list objectAtIndex:section];
+    NSMutableArray *questions = [super.m_array_list objectAtIndex:section];
     return [questions count];
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -44,7 +44,7 @@
     NSUInteger row = [indexPath row];
     
     
-    NSMutableArrayExt* questions = [m_array_list objectAtIndex:section];
+    NSMutableArrayExt* questions = [super.m_array_list objectAtIndex:section];
  
     
     static NSString *GroupedTableIdentifier = @"cell";
@@ -121,7 +121,7 @@
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     NSString *title=@"";
     
-    NSMutableArrayExt* questions = [m_array_list objectAtIndex:section];
+    NSMutableArrayExt* questions = [super.m_array_list objectAtIndex:section];
     
     switch (questions.m_type)
     {
@@ -149,12 +149,12 @@
     NSUInteger section = [indexPath section];
     NSUInteger row = [indexPath row];
     
-    NSMutableArrayExt* questions= [m_array_list objectAtIndex:section];
+    NSMutableArrayExt* questions= [super.m_array_list objectAtIndex:section];
     
  
     if (questions.m_type == TYPE_Multi_Choice)
     {
-        MultChoiceDetailViewController *next = [[self storyboard] instantiateViewControllerWithIdentifier:@"multi_choice_detail"];
+        AbstractDetailViewController *next = [ViewControllerFactory getMultiChoiceDetail:self];
         
         next.m_array_detail = (NSMutableArray*)questions;
         next.m_currentIndex = row;
@@ -164,9 +164,9 @@
     }
     else if (questions.m_type == TYPE_Short_Answer)
     {
-        CalcDetailViewController *next = [[self storyboard] instantiateViewControllerWithIdentifier:@"calc_detail_view"];
+        AbstractDetailViewController *next = [ViewControllerFactory getShortAnswerOrCalcDetail:self];
         
-        next.m_array_detail = (NSMutableArray*)questions;
+        ((MultChoiceDetailViewController*)next).m_array_detail = (NSMutableArray*)questions;
         next.m_currentIndex = row;
         next.m_title = @"简答题搜索结果";
         [app.navController pushViewController:next animated:YES];
@@ -174,7 +174,7 @@
     }
     else if (questions.m_type == TYPE_Calc)
     {
-        CalcDetailViewController *next = [[self storyboard] instantiateViewControllerWithIdentifier:@"calc_detail_view"];
+        AbstractDetailViewController *next = [ViewControllerFactory getShortAnswerOrCalcDetail:self];
         
         next.m_array_detail = (NSMutableArray*)questions;
         next.m_currentIndex = row;
@@ -204,8 +204,6 @@
 
 - (void)dealloc {
     [m_tableview release];
-    [m_array_list removeAllObjects];
-    [m_array_list release];
     [super dealloc];
 }
 @end

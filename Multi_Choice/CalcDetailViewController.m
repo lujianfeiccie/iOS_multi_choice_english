@@ -13,8 +13,6 @@
 @end
 
 @implementation CalcDetailViewController
-@synthesize m_currentIndex;
-@synthesize m_array_detail;
 @synthesize m_title;
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -27,8 +25,8 @@
                                         DataFile:@""];
    
     m_dlg.m_bShowSearchDetail = YES;
-    m_dlg.m_questions = m_array_detail;
-    m_dlg.m_current_index = m_currentIndex;
+    m_dlg.m_questions = super.m_array_detail;
+    m_dlg.m_current_index = super.m_currentIndex;
     [m_dlg load];  
     [m_dlg showAnswer];
 }
@@ -53,11 +51,7 @@
 }
 */
 
-- (void)dealloc {
-    [m_btn_prev release];
-    [m_btn_next release];
-    [super dealloc];
-}
+
 
 - (IBAction)onPrevClick:(id)sender
 {
@@ -71,5 +65,10 @@
     [m_dlg next];
     [m_dlg hideAnswer];
     [m_dlg showAnswer];
+}
+- (void)dealloc {
+    [m_btn_prev release];
+    [m_btn_next release];
+    [super dealloc];
 }
 @end

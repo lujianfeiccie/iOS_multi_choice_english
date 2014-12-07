@@ -9,16 +9,13 @@
 #import "AbstractViewController.h"
 #import "AppDelegate.h"
 #import "CalcChoiceDLg.h"
-@interface CalcDetailViewController : AbstractViewController
+@interface CalcDetailViewController : AbstractDetailViewController
 {
     AppDelegate *app;
     IBOutlet UIButton *m_btn_prev;
     IBOutlet UIButton *m_btn_next;
     CalcChoiceDLg* m_dlg;
 }
-@property(nonatomic) NSInteger m_currentIndex;
-@property(nonatomic,strong) NSMutableArray* m_array_detail;
-@property(nonatomic,strong) NSString* m_title;
 
 - (IBAction)onPrevClick:(id)sender;
 - (IBAction)onNextClick:(id)sender;

@@ -13,13 +13,10 @@
 @end
 
 @implementation MultChoiceDetailViewController
-@synthesize m_array_detail;
-@synthesize m_currentIndex;
-@synthesize m_title;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.navigationItem.title = m_title;
+    self.navigationItem.title = super.m_title;
     
      app = [[UIApplication sharedApplication]delegate];
     m_dlg = [[ MultiChoiceDlg alloc]initWithView:self.view
@@ -28,9 +25,9 @@
                                                             self.view.frame.size.height-m_btn_next.frame.size.height-self.navigationController.navigationBar.frame.size.height-20)
                                         DataFile:@""];
 
-    m_dlg.m_currentIndex = m_currentIndex;
+    m_dlg.m_currentIndex = super.m_currentIndex;
     m_dlg.m_bShowSearchDetail = YES;
-    m_dlg.m_questions = m_array_detail;
+    m_dlg.m_questions = super.m_array_detail;
     [m_dlg load];
     [m_dlg updateUI];
     [m_dlg showAnswer];
