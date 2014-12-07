@@ -7,7 +7,7 @@
 //
 
 #import "AbstractViewController.h"
-
+#import "Constant.h"
 @interface AbstractDetailViewController : AbstractViewController
 @property(nonatomic,strong) NSMutableArray* m_array_detail;
 @property(nonatomic) NSInteger m_currentIndex;

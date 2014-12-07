@@ -65,10 +65,10 @@
     
     self.navigationItem.title = super.m_title;
     
-    if(!m_bCalcView)
+   /* if(!m_bCalcView)
     {
     self.navigationItem.rightBarButtonItem = [ButtonUtil createToolBarButton:@"计算题" target:self action:@selector(toolBarRight)];
-    }
+    }*/
     m_dlg = [[ CalcChoiceDLg alloc] initWithView:self.view DisplayRect:CGRectMake(0, 0,
                                                                                  self.view.frame.size.width,
                                                                                  self.view.frame.size.height-m_btn_next.frame.size.height-self.navigationController.navigationBar.frame.size.height-20)

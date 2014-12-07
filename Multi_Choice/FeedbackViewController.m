@@ -77,12 +77,15 @@
     }
     
     [SVProgressHUD showWithStatus:@"正在提交"];
-     http.url = @"http://iwanted.sinaapp.com/admin.php/API/feedback";
+    http.url = @"http://iwanted.sinaapp.com/admin.php/API/feedback";
+    NSString *appname =  [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"];
+    
     [http.data removeAllObjects];
-    [http.data setObject:m_textview_feedback.text forKey:@"subject"];
+    [http.data setObject:[NSString stringWithFormat:@"%@:%@",appname,m_textview_feedback.text] forKey:@"subject"];
     [http.data setObject:@"0" forKey:@"app"];
     NSThread* myThread = [[NSThread alloc] initWithTarget:http selector:@selector(startPostRequest) object:nil];
     [myThread start];
+
 
 }
 

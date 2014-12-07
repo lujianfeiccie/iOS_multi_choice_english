@@ -7,7 +7,7 @@
 //
 
 #import "AbstractViewController.h"
-
+#import "Constant.h"
 @interface AbstractSearchViewController : AbstractViewController
 @property(nonatomic,retain) NSMutableArray* m_array_list;
 
