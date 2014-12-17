@@ -1,124 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 <question>
-<text tag="question" value="26. 事实上?…"/>
-<text tag="answer" value="As a matter of fact, …&#x0A;= In fact, …&#x0A;&#x0A;例︰事实上? 健康才是最重要。&#x0A;As a matter of fact, it is health that counts."/>
+<text tag="question" value="26. 事实上…"/>
+<text tag="answer" value="As a matter of fact, …&#x0A;= In fact, …&#x0A;&#x0A;例︰事实上, 健康才是最重要。&#x0A;As a matter of fact, it is health that counts."/>
 </question>
 <question>
-<text tag="question" value="27. 
-(A) 例如?… For example, …
-
-(B) 拿…做例子 Take … for example."/>
-<text tag="answer" value="例︰例如?我们盲目地提高生活水准?却降低生活品质。&#x0A;&#x0A;For example, we elevate the living standards blindly, but lower the quality of life."/>
+<text tag="question" value="27. &#x0A;(A) 例如… For example, …&#x0A;&#x0A;(B) 拿…做例子 Take … for example."/>
+<text tag="answer" value="例︰例如, 我们盲目地提高生活水准, 却降低生活品质。&#x0A;&#x0A;For example, we elevate the living standards blindly, but lower the quality of life."/>
 </question>
 <question>
-<text tag="question" value="28. 此外?我们不应忽视…"/>
-<text tag="answer" value="Besides (In addition), we should not neglect …&#x0A;&#x0A;例︰此外?我们不应忽视每个人都想要一个温馨祥和的社会。&#x0A;In addition, we should not neglect that everyone wants a friendly and peaceful society."/>
+<text tag="question" value="28. 此外...我们不应忽视…"/>
+<text tag="answer" value="Besides (In addition), we should not neglect …&#x0A;&#x0A;例︰此外, 我们不应忽视每个人都想要一个温馨祥和的社会。&#x0A;In addition, we should not neglect that everyone wants a friendly and peaceful society."/>
 </question>
 <question>
-<text tag="question" value="29. 相反地?…"/>
-<text tag="answer" value="on the contrary, …&#x0A;= by contrast, …&#x0A;&#x0A;例︰相反地?少数学生似乎还在鬼混。&#x0A;&#x0A;On the contrary, a few students, it seems, are still fooling around."/>
+<text tag="question" value="29. 相反地…"/>
+<text tag="answer" value="on the contrary, …&#x0A;= by contrast, …&#x0A;&#x0A;例︰相反地, 少数学生似乎还在鬼混。&#x0A;&#x0A;On the contrary, a few students, it seems, are still fooling around."/>
 </question>
 <question>
-<text tag="question" value="30. 另一方面?…"/>
-<text tag="answer" value="on the other hand, …&#x0A;&#x0A;例︰政府应严格执法? 另一方面? 大众也应该培养减少污染的好习惯。&#x0A;&#x0A;The government should enforce laws strictly. On the other hand, the public also should develop the good habit of reducing pollution."/>
+<text tag="question" value="30. 另一方面…"/>
+<text tag="answer" value="on the other hand, …&#x0A;&#x0A;例︰政府应严格执法, 另一方面, 大众也应该培养减少污染的好习惯。&#x0A;&#x0A;The government should enforce laws strictly. On the other hand, the public also should develop the good habit of reducing pollution."/>
 </question>
 <question>
-<text tag="question" value="31. 然而?很可惜的是…"/>
-<text tag="answer" value="However, it is a pity that子句&#x0A;&#x0A;例︰然而?很可惜的是他总是临时抱佛脚。&#x0A;&#x0A;However, it is a pity that he should always cram at the eleventh hour."/>
+<text tag="question" value="31. 然而...很可惜的是…"/>
+<text tag="answer" value="However, it is a pity that子句&#x0A;&#x0A;例︰然而, 很可惜的是他总是临时抱佛脚。&#x0A;&#x0A;However, it is a pity that he should always cram at the eleventh hour."/>
 </question>
 <question>
-<text tag="question" value="32. 换言之?…"/>
-<text tag="answer" value="in other words, …&#x0A;= to put it differently&#x0A;&#x0A;例︰换言之?我会尽最大的努力达成我的目标。&#x0A;In other words, I will try my best to attain (gain, live up to) my goal."/>
+<text tag="question" value="32. 换言之…"/>
+<text tag="answer" value="in other words, …&#x0A;= to put it differently&#x0A;&#x0A;例︰换言之, 我会尽最大的努力达成我的目标。&#x0A;In other words, I will try my best to attain (gain, live up to) my goal."/>
 </question>
 <question>
-<text tag="question" value="33. 别人可能认为这是事实?但我不是。我认为…"/>
-<text tag="answer" value="It may be true as assumed by others, but I don&apos;t. I believe that子句&#x0A;&#x0A;例︰别人可能认为这是事实?但我不是。我认为…&#x0A;&#x0A;It may be true as assumed by others, but I don&apos;t. &#x0A;&#x0A;I believe that if you have strong determination and perseverance, the success will certainly come to you in the end."/>
+<text tag="question" value="33. 别人可能认为这是事实...但我不是。我认为…"/>
+<text tag="answer" value="It may be true as assumed by others, but I don&apos;t. I believe that子句&#x0A;&#x0A;例︰别人可能认为这是事实, 但我不是。我认为…&#x0A;&#x0A;It may be true as assumed by others, but I don&apos;t. &#x0A;&#x0A;I believe that if you have strong determination and perseverance, the success will certainly come to you in the end."/>
 </question>
 <question>
-<text tag="question" value="34. 从此之后?我已发现…"/>
-<text tag="answer" value="Ever since then, I have found that子句&#x0A;例︰从此之后? 我已发现…&#x0A;&#x0A;Ever since then, I have found smile the best way to avoid any possible conflicts in our daily lives."/>
+<text tag="question" value="34. 从此之后...我已发现…"/>
+<text tag="answer" value="Ever since then, I have found that子句&#x0A;例︰从此之后, 我已发现…&#x0A;&#x0A;Ever since then, I have found smile the best way to avoid any possible conflicts in our daily lives."/>
 </question>
 <question>
-<text tag="question" value="35. 这样说来? 假如...? 当然毫无疑问地…。"/>
-<text tag="answer" value="In this light, if…, there can surely be no doubt (that) 子句&#x0A;&#x0A;例︰这样说来?假如我们能善用时间?当然毫无疑问地我们会成功。&#x0A;&#x0A;In this light, if we can make good use of time, there can surely be no doubt that we will get somewhere."/>
+<text tag="question" value="35. 这样说来... 假如... 当然毫无疑问地…。"/>
+<text tag="answer" value="In this light, if…, there can surely be no doubt (that) 子句&#x0A;&#x0A;例︰这样说来, 假如我们能善用时间?当然毫无疑问地我们会成功。&#x0A;&#x0A;In this light, if we can make good use of time, there can surely be no doubt that we will get somewhere."/>
 </question>
 <question>
-<text tag="question" value="36. 更严重的是?…。"/>
-<text tag="answer" value="What is more serious is (that)子句&#x0A;&#x0A;例︰更严重的是?我们不珍惜野生动物。&#x0A;What is more serious is that we do not cherish the wildlife."/>
+<text tag="question" value="36. 更严重的是…。"/>
+<text tag="answer" value="What is more serious is (that)子句&#x0A;&#x0A;例︰更严重的是, 我们不珍惜野生动物。&#x0A;What is more serious is that we do not cherish the wildlife."/>
 </question>
 <question>
-<text tag="question" value="37. 鉴于社会的实际需要?…。"/>
-<text tag="answer" value="In view of the practical need of society, ….&#x0A;&#x0A;例︰鉴于社会的实际需要?愈来愈多人对学英语有兴趣。&#x0A;&#x0A;In view of the practical need of society, there are more and more people interested in learning English."/>
+<text tag="question" value="37. 鉴于社会的实际需要…。"/>
+<text tag="answer" value="In view of the practical need of society, ….&#x0A;&#x0A;例︰鉴于社会的实际需要, 愈来愈多人对学英语有兴趣。&#x0A;&#x0A;In view of the practical need of society, there are more and more people interested in learning English."/>
 </question>
 <question>
-<text tag="question" value="38. 如果能实践这三点?…。"/>
-<text tag="answer" value="If one can really put the three points into action (practice), …&#x0A;&#x0A;例︰如果能实践这三点?…。&#x0A;&#x0A;If one can really put the three points into action(practice), &#x0A;&#x0A;he will surely be able to live a healthy and happy life."/>
+<text tag="question" value="38. 如果能实践这三点…。"/>
+<text tag="answer" value="If one can really put the three points into action (practice), …&#x0A;&#x0A;例︰如果能实践这三点…。&#x0A;&#x0A;If one can really put the three points into action(practice), &#x0A;&#x0A;he will surely be able to live a healthy and happy life."/>
 </question>
 <question>
-<text tag="question" value="39. 做这些简单之事?我们一定可以…。"/>
-<text tag="answer" value="By doing these simple things, we surely can ….&#x0A;&#x0A;例︰做这些简单之事?我们一定可以快乐出门平安回家。&#x0A;&#x0A;By doing these simple things, &#x0A;&#x0A;we surely can go out of the door happily and come back home safe every day."/>
+<text tag="question" value="39. 做这些简单之事,我们一定可以…。"/>
+<text tag="answer" value="By doing these simple things, we surely can ….&#x0A;&#x0A;例︰做这些简单之事, 我们一定可以快乐出门平安回家。&#x0A;&#x0A;By doing these simple things, &#x0A;&#x0A;we surely can go out of the door happily and come back home safe every day."/>
 </question>
 <question>
-<text tag="question" value="40. 如此? 我相信…。"/>
-<text tag="answer" value="In this way, I believe (that)子句&#x0A;&#x0A;例︰如此?我相信大家能够像我一样?享受乘坐公车的乐趣。&#x0A;&#x0A;In this way, I believe that all the people may be able to enjoy the bus ride like me."/>
+<text tag="question" value="40. 如此, 我相信…。"/>
+<text tag="answer" value="In this way, I believe (that)子句&#x0A;&#x0A;例︰如此, 我相信大家能够像我一样享受乘坐公车的乐趣。&#x0A;&#x0A;In this way, I believe that all the people may be able to enjoy the bus ride like me."/>
 </question>
 <question>
-<text tag="question" value="41. 实践这些?…。"/>
-<text tag="answer" value="By putting them (the above) into practice, ….&#x0A;&#x0A;例︰实践这些?在智育方面我一直能不断进步。&#x0A;&#x0A;By putting them(the above) into practice, &#x0A;&#x0A;I have been able to make constant progress in intellectual education."/>
+<text tag="question" value="41. 实践这些…。"/>
+<text tag="answer" value="By putting them (the above) into practice, ….&#x0A;&#x0A;例︰实践这些, 在智育方面我一直能不断进步。&#x0A;&#x0A;By putting them(the above) into practice, &#x0A;&#x0A;I have been able to make constant progress in intellectual education."/>
 </question>
 <question>
-<text tag="question" value="42.
-(A) 唯有符合此三项要求?我们才能…。
-Only by living up to the three requirements, can we ….
-
-(B) 唯有通力合作?我们才能…。
-Only with combined efforts, can we …."/>
-<text tag="answer" value="例︰唯有通力合作?我们才能期望台湾不久有新的面貌。&#x0A;&#x0A;Only with combined efforts, can we expect Taiwan to take a new face in due course."/>
+<text tag="question" value="42.&#x0A;(A) 唯有符合此三项要求, 我们才能…。&#x0A;Only by living up to the three requirements, can we ….&#x0A;&#x0A;(B) 唯有通力合作, 我们才能…。&#x0A;Only with combined efforts, can we …."/>
+<text tag="answer" value="例︰唯有通力合作, 我们才能期望台湾不久有新的面貌。&#x0A;&#x0A;Only with combined efforts, can we expect Taiwan to take a new face in due course."/>
 </question>
 <question>
-<text tag="question" value="43. 最后? 但并非最不重要 ?…。"/>
-<text tag="answer" value="Last but no least, ….&#x0A;&#x0A;最后?  但并非最不重要?  教育上的缺失是助长青少年犯罪的原因。&#x0A;Last but no least, the shortcoming in education is the cause contributing to juvenile delinquency."/>
+<text tag="question" value="43. 最后, 但并非最不重要 …。"/>
+<text tag="answer" value="Last but no least, ….&#x0A;&#x0A;最后, 但并非最不重要, 教育上的缺失是助长青少年犯罪的原因。&#x0A;Last but no least, the shortcoming in education is the cause contributing to juvenile delinquency."/>
 </question>
 <question>
 <text tag="question" value="44. 这证据显示～的重要性在怎么强调都不为过。"/>
 <text tag="answer" value="This evidence shows that the importance of ～ cannot be overemphasized.&#x0A;&#x0A;例︰这证据显示交通安全的重要性在怎么强调都不为过。&#x0A;This evidence shows that the importance of traffic safety cannot be overemphasized."/>
 </question>
 <question>
-<text tag="question" value="45. 由于这些理由?我…。"/>
-<text tag="answer" value="For these reasons, I ….&#x0A;&#x0A;例︰由于这些理由?我认为在台湾接受大学教育是明智的。&#x0A;For these reasons, I think that receiving college education in Taiwan is wise."/>
+<text tag="question" value="45. 由于这些理由, 我…。"/>
+<text tag="answer" value="For these reasons, I ….&#x0A;&#x0A;例︰由于这些理由, 我认为在台湾接受大学教育是明智的。&#x0A;For these reasons, I think that receiving college education in Taiwan is wise."/>
 </question>
 <question>
-<text tag="question" value="46. 总而言之?…。"/>
-<text tag="answer" value="In conclusion, …&#x0A;&#x0A;= To sum up, …&#x0A;&#x0A;例︰总而言之?好国民应该遵守交通规则。&#x0A;&#x0A;In conclusion, a good citizen should abide by traffic regulations."/>
+<text tag="question" value="46. 总而言之…。"/>
+<text tag="answer" value="In conclusion, …&#x0A;&#x0A;= To sum up, …&#x0A;&#x0A;例︰总而言之, 好国民应该遵守交通规则。&#x0A;&#x0A;In conclusion, a good citizen should abide by traffic regulations."/>
 </question>
 <question>
-<text tag="question" value="47. 因此? 我们能下个结论? 那就是…。"/>
-<text tag="answer" value="We can, therefore, come to the conclusion (that)子句&#x0A;&#x0A;例︰因此? 我们能下个结论?那就是世上自由罪珍贵。&#x0A;We can, therefore, come to the conclusion that nothing is so precious as freedom in the world."/>
+<text tag="question" value="47. 因此, 我们能下个结论, 那就是…。"/>
+<text tag="answer" value="We can, therefore, come to the conclusion (that)子句&#x0A;&#x0A;例︰因此, 我们能下个结论?那就是世上自由罪珍贵。&#x0A;We can, therefore, come to the conclusion that nothing is so precious as freedom in the world."/>
 </question>
 <question>
-<text tag="question" value="48. 如果我们能做到如上所述?毫无疑问地?…。"/>
+<text tag="question" value="48. 如果我们能做到如上所述, 毫无疑问地…。"/>
 <text tag="answer" value="If we can do as mentioned above, there can be no doubt (that)子句&#x0A;&#x0A;例︰如果我们能做到如上所述?毫无疑问地?我们就能精通英语。&#x0A;If we can do as mentioned above, there can be no doubt that we can master English"/>
 </question>
 <question>
-<text tag="question" value="49. 因此? 这就是…的原因。"/>
-<text tag="answer" value="Thus, this is the reason why ….&#x0A;&#x0A;例︰因此? 这就是我重感冒的原因。&#x0A;&#x0A;Thus, this is the reason why I caught a bad cold."/>
+<text tag="question" value="49. 因此, 这就是…的原因。"/>
+<text tag="answer" value="Thus, this is the reason why ….&#x0A;&#x0A;例︰因此, 这就是我重感冒的原因。&#x0A;&#x0A;Thus, this is the reason why I caught a bad cold."/>
 </question>
 <question>
-<text tag="question" value="50. 所以? 我们应该了解…。"/>
+<text tag="question" value="50. 所以, 我们应该了解…。"/>
 <text tag="answer" value="Therefore, we should realize (that)子句&#x0A;&#x0A;例︰所以?我们应该了解学英文不能没有字典。&#x0A;&#x0A;Therefore, we should realize that in learning English we cannot do without a dictionary."/>
 </question>
 <question>
-<text tag="question" value="51. 因此? 由上列的讨论我们可以明了…。"/>
+<text tag="question" value="51. 因此, 由上列的讨论我们可以明了…。"/>
 <text tag="answer" value="We, therefore, can make clear from the above discussion (that)子句&#x0A;&#x0A;例︰因此?由上列的讨论我们可以明了毅力可以克服任何困难。&#x0A;&#x0A;We, therefore, can make clear from the above discussion that perseverance can overcome any difficulty."/>
 </question>
 <question>
-<text tag="question" value="52.
-1. 从～观点来看?…。
-From the ～ point of view, ….
-
-2. 根据～的看法?…。
-According to ～ point of view, …."/>
-<text tag="answer" value="例︰从政治的观点来看? 这是一个很复杂的问题。&#x0A;&#x0A;From the political point"/>
+<text tag="question" value="52.&#x0A;1. 从～观点来看…。&#x0A;From the ～ point of view, ….&#x0A;&#x0A;2. 根据～的看法…。&#x0A;According to ～ point of view, …."/>
+<text tag="answer" value="例︰从政治的观点来看, 这是一个很复杂的问题。&#x0A;&#x0A;From the political point"/>
 </question>
 </root>

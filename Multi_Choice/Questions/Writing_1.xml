@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 <question>
-<text tag="question" value="1. 不用说?…"/>
+<text tag="question" value="1. 不用说…"/>
 <text tag="answer" value="It goes without saying that子句&#x0A;&#x0A;= (It is) needless to say (that)子句&#x0A;&#x0A;= It is obvious that子句&#x0A;&#x0A;= Obviously, S. + V.&#x0A;&#x0A;例︰不用说早睡早起是值得的。&#x0A;&#x0A;It goes without saying that it pays to keep early hours."/>
 </question>
 <question>
@@ -13,7 +13,7 @@
 <text tag="answer" value="I am greatly convinced (that)子句&#x0A;&#x0A;= I am greatly assured (that)子句&#x0A;&#x0A;例︰我深信预防是于治疗。&#x0A;&#x0A;I am greatly convinced that prevention is better than cure."/>
 </question>
 <question>
-<text tag="question" value="4. 在各种…之中?…"/>
+<text tag="question" value="4. 在各种…之中…"/>
 <text tag="answer" value="Among various kinds of …, …&#x0A;&#x0A;= Of all the …, …&#x0A;&#x0A;例︰在各种运动中?我尤其喜欢慢跑。&#x0A;&#x0A;Among various kinds of sports, I like jogging in particular."/>
 </question>
 <question>
@@ -25,130 +25,67 @@
 <text tag="answer" value="… cannot be overemphasized&#x0A;&#x0A;例︰交通安全的重要性无论如何强调都不为过。&#x0A;&#x0A;The importance of traffic safety cannot be overemphasized."/>
 </question>
 <question>
-<text tag="question" value="7. 就我的看法?…；我认为…"/>
+<text tag="question" value="7. 就我的看法…；我认为…"/>
 <text tag="answer" value="In my opinion, …&#x0A;&#x0A;= To my mind, ….&#x0A;&#x0A;= As far as I am concerned, …&#x0A;&#x0A;= I am of the opinion that子句&#x0A;&#x0A;例︰就我的看法?打电动玩具既花费时间也有害健康。&#x0A;&#x0A;In my opinion, playing video games not only takes much time but is also harmful to health."/>
 </question>
 <question>
-<text tag="question" value="8. 
-(A) 每个人都知道…
-
-(B) 就我所知?…"/>
+<text tag="question" value="8. &#x0A;(A) 每个人都知道…&#x0A;&#x0A;(B) 就我所知…"/>
 <text tag="answer" value="Everyone knows (that)子句&#x0A;&#x0A;As far as my knowledge is concerned, …&#x0A;&#x0A;例︰就我所知?下列方法对我帮助很大。&#x0A;&#x0A;As far as my knowledge is concerned, the following ways are of great help to me."/>
 </question>
 <question>
-<text tag="question" value="9. 毫无疑问地?…"/>
+<text tag="question" value="9. 毫无疑问地…"/>
 <text tag="answer" value="There is no doubt (that)子句&#x0A;&#x0A;例︰毫无疑问地?近视在我国的年轻人中是一个严重的问题。&#x0A;&#x0A;There is no doubt that near-sightedness is a serious problem among the youth of our country."/>
 </question>
 <question>
-<text tag="question" value="10. 根据我个人经验?…"/>
+<text tag="question" value="10. 根据我个人经验…"/>
 <text tag="answer" value="According to my personal experience, …&#x0A;&#x0A;= Based on my personal experience, …&#x0A;&#x0A;例︰根据我个人经验?微笑已带给我许多好处。&#x0A;&#x0A;According to my personal experience, smile has done me a lot of good."/>
 </question>
 <question>
-<text tag="question" value="11. 在我认识的人当中?也许没有一个人比…更值得我尊敬。"/>
-<text tag="answer" value="Of all the people I know, perhaps non deserves my respect more than …&#x0A;&#x0A;例︰在我认识的人当中?也许没有一个人比我的英文老师张老师更值得我尊敬。&#x0A;&#x0A;Of all the people I know, perhaps non deserves my respect more than Miss Chang, my English teacher."/>
+<text tag="question" value="11. 在我认识的人当中, 也许没有一个人比…更值得我尊敬。"/>
+<text tag="answer" value="Of all the people I know, perhaps non deserves my respect more than …&#x0A;&#x0A;例︰在我认识的人当中, 也许没有一个人比我的英文老师张老师更值得我尊敬。&#x0A;&#x0A;Of all the people I know, perhaps non deserves my respect more than Miss Chang, my English teacher."/>
 </question>
 <question>
-<text tag="question" value="12. 在我的求学过程中?我忘不了…"/>
-<text tag="answer" value="In the course of my schooling. I will never forget …&#x0A;&#x0A;例︰在我的求学过程中?我忘不了学习英文所遭到的大困难。&#x0A;&#x0A;In the course of my schooling. I will never forget the great difficulty I encountered in learning English."/>
+<text tag="question" value="12. 在我的求学过程中, 我忘不了…"/>
+<text tag="answer" value="In the course of my schooling. I will never forget …&#x0A;&#x0A;例︰在我的求学过程中, 我忘不了学习英文所遭到的大困难。&#x0A;&#x0A;In the course of my schooling. I will never forget the great difficulty I encountered in learning English."/>
 </question>
 <question>
-<text tag="question" value="13. 
-(A) 随着人口的增加?
-… With the increase/growth of the population, …
-
-(B) 随着科技的进步, 
-… With the advance of science and technology, …"/>
-<text tag="answer" value="例︰随着台湾经济的快速发展?许多社会问题产生了。&#x0A;&#x0A;With the rapid development of Taiwan&apos;s economy, a lot of social problems have come to pass."/>
+<text tag="question" value="13. &#x0A;(A) 随着人口的增加&#x0A;… With the increase/growth of the population, …&#x0A;&#x0A;(B) 随着科技的进步, &#x0A;… With the advance of science and technology, …"/>
+<text tag="answer" value="例︰随着台湾经济的快速发展, 许多社会问题产生了。&#x0A;&#x0A;With the rapid development of Taiwan&apos;s economy, a lot of social problems have come to pass."/>
 </question>
 <question>
-<text tag="question" value="14.  
-(A) 在这信息的年代?…扮演重要的角色。
-In the age of information and communication, … plays an important role.
-
-(B) 在今日工业社会中?…是生命不可或缺的。
-In today&apos;s industrial society, … is indispensable to life."/>
-<text tag="answer" value="例︰在这信息的年代?计算机扮演非常重要的角色。&#x0A;&#x0A;In this age of information and communication, the computer plays an extremely important role."/>
+<text tag="question" value="14.  &#x0A;(A) 在这信息的年代…  扮演重要的角色。&#x0A;In the age of information and communication, … plays an important role.&#x0A;&#x0A;(B) 在今日工业社会中… 是生命不可或缺的。&#x0A;In today&apos;s industrial society, … is indispensable to life."/>
+<text tag="answer" value="例︰在这信息的年代, 计算机扮演非常重要的角色。&#x0A;&#x0A;In this age of information and communication, the computer plays an extremely important role."/>
 </question>
 <question>
-<text tag="question" value="15. 在讨论…?一个人不得不承认…。"/>
-<text tag="answer" value="In dealing with …, one cannot but admit (that)子句&#x0A;&#x0A;例︰在讨论未来的职业? 一个人不得不承认尽早决定未来的职业很重要。&#x0A;&#x0A;In dealing with one&apos;s future career, one cannot but admit that it is very important to decide one&apos;s future career as early as possible."/>
+<text tag="question" value="15. 在讨论…一个人不得不承认…。"/>
+<text tag="answer" value="In dealing with …, one cannot but admit (that)子句&#x0A;&#x0A;例︰在讨论未来的职业, 一个人不得不承认尽早决定未来的职业很重要。&#x0A;&#x0A;In dealing with one&apos;s future career, one cannot but admit that it is very important to decide one&apos;s future career as early as possible."/>
 </question>
 <question>
 <text tag="question" value="16. 世上没有什么比…更令我高兴。"/>
 <text tag="answer" value="Nothing in the world can delight me so much as …&#x0A;&#x0A;例︰世上没有什么比到快餐店吃汉堡更令我高兴。&#x0A;&#x0A;Nothing in the world can delight me so much as having hamburgers in fast-food restaurants."/>
 </question>
 <question>
-<text tag="question" value="17.
-… 是必要的 It is necessary that S (should) V
-
-… 是重要的 It is important/essential that S (should) V
-
-… 是适当的 It is proper that S (should) V
-
-… 是紧急的 It is urgent that S (should) V"/>
+<text tag="question" value="17.&#x0A;… 是必要的 It is necessary that S (should) V&#x0A;&#x0A;… 是重要的 It is important/essential that S (should) V&#x0A;&#x0A;… 是适当的 It is proper that S (should) V&#x0A;&#x0A;… 是紧急的 It is urgent that S (should) V"/>
 <text tag="answer" value="例︰我们当保持公共场所清洁是应当的。&#x0A;&#x0A;It is proper that we (should) keep the public places clean."/>
 </question>
 <question>
-<text tag="question" value="18. 
-每当我听到…?我就忍不住感到兴奋。
-Whenever I hear …, I cannot but feel excited.
-
-每当我做…? 我就忍不住感到悲伤。 
-Whenever I do …, I cannot but feel sad.
-
-每当我想到…?我就忍不住感到紧张。
-Whenever I think of …, I cannot but feel nervous.
-
-每当我遭遇…?我就忍不住感到害怕。
-Whenever I meet with …, I cannot but feel frightened.
-
-每当我看到… 我就忍不住感到惊讶。
-Whenever I see …, I cannot but feel surprised."/>
-<text tag="answer" value="例︰每当我想到我家附近那一条清澈的小溪?我就忍不住感到悲伤。&#x0A;&#x0A;Whenever I think of the clean brook near my home, I cannot but feel sad.&#x0A;&#x0A;= Every time I think of the clean brook near my home, I cannot help feeling sad."/>
+<text tag="question" value="18. &#x0A;每当我听到… 我就忍不住感到兴奋。&#x0A;Whenever I hear …, I cannot but feel excited.&#x0A;&#x0A;每当我做… 我就忍不住感到悲伤。 &#x0A;Whenever I do …, I cannot but feel sad.&#x0A;&#x0A;每当我想到…?我就忍不住感到紧张。&#x0A;Whenever I think of …, I cannot but feel nervous.&#x0A;&#x0A;每当我遭遇…?我就忍不住感到害怕。&#x0A;Whenever I meet with …, I cannot but feel frightened.&#x0A;&#x0A;每当我看到… 我就忍不住感到惊讶。&#x0A;Whenever I see …, I cannot but feel surprised."/>
+<text tag="answer" value="例︰每当我想到我家附近那一条清澈的小溪, 我就忍不住感到悲伤。&#x0A;&#x0A;Whenever I think of the clean brook near my home, I cannot but feel sad.&#x0A;&#x0A;= Every time I think of the clean brook near my home, I cannot help feeling sad."/>
 </question>
 <question>
-<text tag="question" value="19. 
-据说… It is said (that)子句
-
-一般认为… It is thought (that)子句
-
-大家都知道… It is known (that)子句
-
-据报导… It is reported (that)子句
-
-一般预料… It is expected (that)子句
-
-一般估计… It is estimated (that)子句
-
-一般相信… It is believed (that)子句"/>
+<text tag="question" value="19. &#x0A;据说… It is said (that)子句&#x0A;&#x0A;一般认为… It is thought (that)子句&#x0A;&#x0A;大家都知道… It is known (that)子句&#x0A;&#x0A;据报导… It is reported (that)子句&#x0A;&#x0A;一般预料… It is expected (that)子句&#x0A;&#x0A;一般估计… It is estimated (that)子句&#x0A;&#x0A;一般相信… It is believed (that)子句"/>
 <text tag="answer" value="例︰一般相信阅读增加我们的知识、扩大我们的心胸。&#x0A;&#x0A;It is believed (that) reading increases our knowledge and broadens our mind."/>
 </question>
 <question>
-<text tag="question" value="20. …的主要理由是…
-
-The main reason why ….. is (that)子句"/>
+<text tag="question" value="20. …的主要理由是…&#x0A;&#x0A;The main reason why ….. is (that)子句"/>
 <text tag="answer" value="例︰青少年犯罪的主要理由是社会环境日一败坏。&#x0A;&#x0A;The main reason why the juveniles commit crimes is that social environment is becoming worse."/>
 </question>
 <question>
-<text tag="question" value=" 21. 
-俗语说得好：「…」。
-
-Well goes an old saying, &apos;…&apos;
-
-= As an old saying goes(runs, says), &apos;…&apos;
-
-= An old saying goes, &apos;…&apos;
-
-= It&apos;s an old saying (that)子句"/>
+<text tag="question" value=" 21. &#x0A;俗语说得好：「…」。&#x0A;Well goes an old saying, &apos;…&apos;&#x0A;&#x0A;= As an old saying goes(runs, says), &apos;…&apos;&#x0A;&#x0A;= An old saying goes, &apos;…&apos;&#x0A;&#x0A;= It&apos;s an old saying (that)子句"/>
 <text tag="answer" value="例︰俗话说得好：「诚实为上策」。&#x0A;&#x0A;As an old saying goes, &apos;Honesty is the best policy.&apos;"/>
 </question>
 <question>
-<text tag="question" value="22. 
-(A) …用下列方法… … in the following ways.
-
-(B) …有三个主要理由。 … for three major reasons.
-
-(C) 要…? 至少我们可做三件事。 To …, there are at least three things we can do."/>
+<text tag="question" value="22. &#x0A;(A) …用下列方法… … in the following ways.&#x0A;&#x0A;(B) …有三个主要理由。 … for three major reasons.&#x0A;&#x0A;(C) 要…? 至少我们可做三件事。 To …, there are at least three things we can do."/>
 <text tag="answer" value="例︰&#x0A;(A) 我用下列方法增加信心。&#x0A;I increase my confidence in the following ways.&#x0A;&#x0A;(B) 人们学外语有三个理由。&#x0A;People learn a foreign language for three major reasons.&#x0A;&#x0A;(C) 为了维护健康?我们每天至少可做三件事。&#x0A;To keep healthy, there are at least three things we can do every day."/>
 </question>
 <question>
@@ -156,10 +93,7 @@ Well goes an old saying, &apos;…&apos;
 <text tag="answer" value="That is to say, …&#x0A;= That is, …&#x0A;= Namely, …&#x0A;&#x0A;例︰我们生活需有规律。也就是说?早睡早起?戒除烟酒。&#x0A;We need to live a regular life. That is, we can keep good hours and refrain from smoking and drinking in the daily activities."/>
 </question>
 <question>
-<text tag="question" value="24. 
-(A) 基于这个理由?… For this reason, …
-
-(B) 为了这个目的?… For this purpose, …"/>
+<text tag="question" value="24. &#x0A;(A) 基于这个理由… For this reason, …&#x0A;&#x0A;(B) 为了这个目的… For this purpose, …"/>
 <text tag="answer" value="例︰基于这个理由?我已决定把行医作为未来的职业。&#x0A;For this reason, I have decided to take practicing medicine as my future career."/>
 </question>
 <question>
